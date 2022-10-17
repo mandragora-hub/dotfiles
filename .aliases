@@ -1,0 +1,8 @@
+# .aliases
+
+alias newt="gnome-terminal & disown"
+alias devssh="ssh devadmin@172.16.7.108"
+alias psdocker="docker ps --all --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.CreatedAt}}\t{{.Ports}}'"
+alias dockerhost="ssh devadmin@172.16.7.24"
+alias cat="batcat"
+alias clip="xclip -sel clip"
