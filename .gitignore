@@ -1,0 +1,16 @@
+# Logs
+*.log
+
+# Dependencies directory
+node_modules
+
+# Next
+.next
+.vercel
+out
+
+# Sitemaps
+sitemap.xml
+
+# Environment vars
+.env
