@@ -1,5 +1,6 @@
 # .aliases
 
+alias rm='rm -i' # safety first
 alias newt="gnome-terminal & disown"
 alias devssh="ssh devadmin@172.16.7.108"
 alias psdocker="docker ps --all --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.CreatedAt}}\t{{.Ports}}'"
@@ -7,3 +8,9 @@ alias dockerhost="ssh devadmin@172.16.7.24"
 alias cat="batcat"
 alias clip="xclip -sel clip"
 alias myip='curl http://ipecho.net/plain; echo'
+alias cp='cp -iv' # Preferred 'cp' implementation
+alias mv='mv -iv' # Preferred 'mv' implementation
+alias mkdir='mkdir -pv' # Preferred 'mkdir' implementation
+alias c='clear' # Clear terminal display
+alias listenPorts='sudo lsof -i | grep LISTEN' # All listening connections
+alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current dir
