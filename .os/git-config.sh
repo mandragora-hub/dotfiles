@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source 'utils.sh'
+
 # git_config : Helps you to setup Git.
 
 git_config() {
