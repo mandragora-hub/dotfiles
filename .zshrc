@@ -8,9 +8,7 @@ fi
 source ~/.aliases
 source ~/.functions
 source ~/.exports
-
-# Oracle driver tutorial
-#export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_3
+source ~/.extra
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
