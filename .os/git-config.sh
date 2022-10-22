@@ -16,6 +16,10 @@ git_config() {
 		execute "git config --global user.email $git_email\n"
 		print_success "Git setup -> Username: $git_username , Email: $git_email\n"
 		
+		print_question "Git signing key: "
+		read git_signing_key
+		execute "git config --global user.signingkey $git_signing_key"
+		
 		print_question "Git global editor: "
 		read -r git_editor
 		execute "git config --global core.editor $git_editor --wait"
