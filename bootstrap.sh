@@ -26,10 +26,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 # Pokemon script
-git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
-pushd pokemon-colorscripts
-sudo ./install.sh
-popd
+# git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
+# pushd pokemon-colorscripts
+# sudo ./install.sh
+# popd
+# rm -rf pokemon-colorscripts
 
 # Create symlink of dotfiles home directory
-stow -t ${HOME}
+stow --target="$HOME" --dir="$PWD" --adopt --stow .
+git restore . 
