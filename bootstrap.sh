@@ -34,4 +34,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Create symlink of dotfiles home directory
 stow --target="$HOME" --dir="$PWD" --adopt --stow .
-git restore . 
+# git restore . 
