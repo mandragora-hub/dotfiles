@@ -11,3 +11,5 @@ alias mkdir='mkdir -pv' # Preferred 'mkdir' implementation
 alias c='clear' # Clear terminal display
 alias listenPorts='sudo lsof -i | grep LISTEN' # All listening connections
 alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current dir
+
+alias myremote="ssh -X remote"

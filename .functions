@@ -1,11 +1,5 @@
 # .functions
 
-# dtf : Dotfiles repo
-
-dtf () {
-  git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" "$@"
-}
-
 # mcd : Makes a new dir and jumps into it.
 
 function mcd() {
