@@ -9,7 +9,7 @@ sudo apt install -y xclip bat neofetch stow jq vim
 
 # Install Oh-My-ZSH, theme, and plugins 
 sudo apt update && sudo apt install -y zsh
-chsh -s /bin/zsh
+sudo chsh -s $(which zsh) $(whoami)
 
 curl -L http://install.ohmyz.sh | sh &> /dev/null
 	
@@ -26,11 +26,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 # Pokemon script
-# git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
-# pushd pokemon-colorscripts
-# sudo ./install.sh
-# popd
-# rm -rf pokemon-colorscripts
+git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
+pushd pokemon-colorscripts
+sudo ./install.sh
+popd
+rm -rf pokemon-colorscripts
 
 # Create symlink of dotfiles home directory
 stow --target="$HOME" --dir="$PWD" --adopt --stow .
