@@ -58,4 +58,4 @@ rm -rf pokemon-colorscripts
 
 # Create symlink of dotfiles home directory
 stow --target="$HOME" --dir="$PWD" --adopt --stow .
-# git restore . 
+git restore . 
