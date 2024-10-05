@@ -1,8 +1,32 @@
 #!/bin/bash
 
+# Banner
+cat <<'EOF'
+___  ___                _                                 _      ______      _    __ _ _              
+|  \/  |               | |                               ( )     |  _  \    | |  / _(_) |             
+| .  . | __ _ _ __   __| |_ __ __ _  __ _  ___  _ __ __ _|/ ___  | | | |___ | |_| |_ _| | ___  ___    
+| |\/| |/ _` | '_ \ / _` | '__/ _` |/ _` |/ _ \| '__/ _` | / __| | | | / _ \| __|  _| | |/ _ \/ __|   
+| |  | | (_| | | | | (_| | | | (_| | (_| | (_) | | | (_| | \__ \ | |/ / (_) | |_| | | | |  __/\__ \_  
+\_|  |_/\__,_|_| |_|\__,_|_|  \__,_|\__, |\___/|_|  \__,_| |___/ |___/ \___/ \__|_| |_|_|\___||___(_) 
+                                     __/ |                                                            
+                                    |___/                                                             
+                                                                                            
+ /\_/\
+( o.o )
+ > ^ <
+EOF
+echo "+------------------------------------------+"
+printf "| %-40s |\n" "Ubuntu Config Dotfiles - Mandragora"
+printf "| %-40s |\n" "$(date)"
+printf "| %-40s |\n" "$(uname)"
+echo "+------------------------------------------+"
+
+
+cd; git clone --depth=1 -b update-dotfiles https://github.com/mandragora-hub/dotfiles.git ~/dotfiles
+
 # Install tools 
 sudo apt update
-sudo apt install -y xclip bat neofetch stow jq vim
+sudo apt install -y git xclip bat neofetch stow jq vim
 
 # terminal preferences
 # TODO: Verify .os/terminal-preference.sh
