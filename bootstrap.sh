@@ -22,7 +22,7 @@ printf "| %-40s |\n" "$(uname)"
 echo "+------------------------------------------+"
 
 
-cd; git clone --depth=1 -b update-dotfiles https://github.com/mandragora-hub/dotfiles.git ~/dotfiles
+cd; git clone --depth=1 https://github.com/mandragora-hub/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 # Install tools 
