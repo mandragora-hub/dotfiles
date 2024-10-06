@@ -59,6 +59,66 @@ neofetch_install() {
 	fi
 }
 
+# stow_install : Installing stow 
+
+stow_install() {
+
+	ask_for_confirmation "Would you like to install stow?"
+
+	if answer_is_yes; then
+		execute "sudo apt update"
+		execute "sudo apt install stow"
+		if cmd_exists "stow"; then
+			print_success 'stow has been succesfully installed!'
+		else
+			print_error 'stow not installed.'
+		fi
+	else
+		print_error 'stow not installed.'
+	fi
+}
+
+# jq_install : Installing jq
+
+jq_install() {
+
+	ask_for_confirmation "Would you like to install jq?"
+
+	if answer_is_yes; then
+		execute "sudo apt update"
+		execute "sudo apt install jq"
+		if cmd_exists "jq"; then
+			print_success 'jq has been succesfully installed!'
+		else
+			print_error 'jq not installed.'
+		fi
+	else
+		print_error 'jq not installed.'
+	fi
+}
+
+# vim_install : Installing vim
+
+vim_install() {
+
+	ask_for_confirmation "Would you like to install vim?"
+
+	if answer_is_yes; then
+		execute "sudo apt update"
+		execute "sudo apt install vim"
+		if cmd_exists "vim"; then
+			print_success 'vim has been succesfully installed!'
+		else
+			print_error 'vim not installed.'
+		fi
+	else
+		print_error 'vim not installed.'
+	fi
+}
+
 xclip_install
 bat_install
 neofetch_install
+stow_install
+jq_install
+vim_install

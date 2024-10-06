@@ -13,7 +13,7 @@ npm_packages() {
 	
 		print_in_blue "npm packages"
 		npm_install "gitmoji-cli"
-		npm_install "@antfu/ni"
+		npm_install "n"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
