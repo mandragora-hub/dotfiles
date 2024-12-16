@@ -12,4 +12,6 @@ alias c='clear' # Clear terminal display
 alias listenPorts='sudo lsof -i | grep LISTEN' # All listening connections
 alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current dir
 
+alias serve="python3 -m http.server 8080" # Fast http server
+
 alias myremote="ssh -X remote"
